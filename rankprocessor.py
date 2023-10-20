@@ -1,7 +1,7 @@
 import csv
 ref_dict = {}
 current_dict = {}
-with open("test.csv", "r") as csv_file:
+with open("games.csv", "r") as csv_file:
     game_data = csv.reader(csv_file)
     start = True
     for line in game_data:
