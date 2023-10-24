@@ -1,6 +1,6 @@
 import json
 
-leagues = ['LPL','LEC','LCK','LCS','PCS','VCS','CBLOL','LJL','LLA']
+leagues = ['LPL','LEC','LCK','LCS','PCS','VCS','CBLOL','LJL','LLA','Worlds','MSI']
 
 with open("sort.json", "r") as json_file:
     tournaments_data = json.load(json_file)
@@ -12,6 +12,7 @@ f = open("games.csv", "w")
 for tournament in tournaments_data:
 
     for i in leagues_data:
+        name=''
         if i['id'] == tournament["leagueId"]:
             name=i['name']
             break
